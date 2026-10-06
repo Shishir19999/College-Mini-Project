@@ -199,3 +199,9 @@ hr{
   justify-content: center;
   align-items: center; 
 }
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  form { display: block; margin: 10px; }
+  .container { min-width: 0; max-width: 100%; padding: 10px; }
+  img { width: 30%; }
+}

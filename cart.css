@@ -1,0 +1,42 @@
+/* Plain-CSS version of the cart styles (style3.css is SCSS and cannot be loaded by a browser). */
+.shopping-cart { max-width: 960px; margin: 0 auto; padding: 0 16px 30px; font-family: 'Varela Round', Arial, sans-serif; }
+.shopping-cart label { color: #777; }
+.product-image, .product-details, .product-price, .product-quantity, .product-removal, .product-line-price { float: left; box-sizing: border-box; }
+.product-image { width: 20%; text-align: center; }
+.product-image img { width: 100px; max-width: 100%; }
+.product-details { width: 33%; }
+.product-price { width: 12%; }
+.product-quantity { width: 12%; }
+.product-quantity input { width: 50px; }
+.product-removal { width: 11%; }
+.product-line-price { width: 12%; text-align: right; }
+.shopping-cart:after, .column-labels:after, .product:after, .totals-item:after { content: ''; display: table; clear: both; }
+.column-labels { border-bottom: 1px solid #eee; margin-bottom: 15px; padding-bottom: 10px; }
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal { text-indent: -9999px; }
+.product { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+.product-title { font-weight: bold; margin-right: 20px; }
+.product-description { margin: 5px 20px 5px 0; line-height: 1.4em; }
+.remove-product { border: 0; padding: 4px 8px; background: #c66; color: #fff; font-size: 12px; border-radius: 3px; cursor: pointer; }
+.remove-product:hover { background: #a44; }
+.totals-item { float: right; clear: both; width: 100%; margin-bottom: 10px; }
+.totals-item label { float: left; width: 79%; text-align: right; }
+.totals-item .totals-value { float: right; width: 21%; text-align: right; }
+.totals-item-total { font-weight: bold; }
+.checkout { float: right; border: 0; margin-top: 20px; padding: 6px 25px; background: #6b6; color: #fff; font-size: 24px; border-radius: 3px; cursor: pointer; }
+.checkout:hover { background: #494; }
+
+@media screen and (max-width: 650px) {
+  .column-labels { display: none; }
+  .product-image { float: right; width: auto; }
+  .product-details { float: none; width: auto; margin-bottom: 10px; }
+  .product-price { clear: both; width: 90px; }
+  .product-quantity { width: 90px; }
+  .product-removal { width: auto; }
+  .product-line-price { width: 90px; }
+}
+@media screen and (max-width: 350px) {
+  .product-removal { float: right; }
+  .product-line-price { clear: left; width: auto; margin-top: 10px; }
+  .totals-item label { width: 60%; }
+  .totals-item .totals-value { width: 40%; }
+}

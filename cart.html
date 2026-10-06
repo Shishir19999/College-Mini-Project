@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 	content="width=device-width, initial-scale=1.0">
+	<title>Your Cart - Online FoodShop</title>
 	<link rel="stylesheet" href="style.css">
-	<link
-	href="https://fonts.googleapis.com/css2?
-	family=Ubuntu+Mono&display=swap"
-	rel="stylesheet">	
+	<link rel="stylesheet" href="cart.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">	
 </head>
 
 <body>
@@ -19,42 +20,68 @@
 	</header>
 	<hr>
 	<nav id="navbar">
-		<img src="5.jpeg">
+		<img src="logo.png" alt="Online FoodShop logo" height="40">
 		<ul id="navcontent">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Menu</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="order.html">Menu</a></li>
 			<li><a href="contact.html">ContactUs</a></li>
 		</ul>
 	</nav>
-	<div id="container1">
-		<div id="row1">
-			Welcome to Online FoodShop
+	<main class="shopping-cart">
+		<h1 id="top3">Your Cart</h1>
+		<div class="column-labels">
+			<label class="product-image">Image</label>
+			<label class="product-details">Product</label>
+			<label class="product-price">Price (Rs)</label>
+			<label class="product-quantity">Quantity</label>
+			<label class="product-removal">Remove</label>
+			<label class="product-line-price">Total</label>
 		</div>
-		<button class="btn">ORDER NOW</button>
-		<div id="container3">
-			<div id="row2">
-				<button class="btn">Prices</button>
+		<div class="product">
+			<div class="product-image"><img src="biryani.jpg" alt="Biryani"></div>
+			<div class="product-details">
+				<div class="product-title">Biryani</div>
+				<p class="product-description">Fragrant rice with spices.</p>
 			</div>
-			<div id="row3">
-				<button class="btn">Specials</button>
+			<div class="product-price">50.00</div>
+			<div class="product-quantity"><input type="number" value="1" min="0" aria-label="Quantity of Biryani"></div>
+			<div class="product-removal"><button class="remove-product" type="button">Remove</button></div>
+			<div class="product-line-price">50.00</div>
+		</div>
+		<div class="product">
+			<div class="product-image"><img src="burger.jpg" alt="Burger"></div>
+			<div class="product-details">
+				<div class="product-title">Burger</div>
+				<p class="product-description">Fresh burger with veggies.</p>
 			</div>
+			<div class="product-price">40.00</div>
+			<div class="product-quantity"><input type="number" value="1" min="0" aria-label="Quantity of Burger"></div>
+			<div class="product-removal"><button class="remove-product" type="button">Remove</button></div>
+			<div class="product-line-price">40.00</div>
 		</div>
-	</div>
-	<hr>
-	<h1 id="top3">Featured Products</h1>
-	<div id="container4">
-		<div id="row4">
-			<button class="btn">ORDER NOW</button>
+		<div class="product">
+			<div class="product-image"><img src="momos.jpg" alt="Momos"></div>
+			<div class="product-details">
+				<div class="product-title">Momos</div>
+				<p class="product-description">Steamed dumplings.</p>
+			</div>
+			<div class="product-price">60.00</div>
+			<div class="product-quantity"><input type="number" value="1" min="0" aria-label="Quantity of Momos"></div>
+			<div class="product-removal"><button class="remove-product" type="button">Remove</button></div>
+			<div class="product-line-price">60.00</div>
 		</div>
-		<div id="row5">
-			<button class="btn">ORDER NOW</button>
+		<div class="totals">
+			<div class="totals-item"><label>Subtotal (Rs)</label><div class="totals-value" id="cart-subtotal">0.00</div></div>
+			<div class="totals-item"><label>Tax (5%)</label><div class="totals-value" id="cart-tax">0.00</div></div>
+			<div class="totals-item"><label>Shipping</label><div class="totals-value" id="cart-shipping">0.00</div></div>
+			<div class="totals-item totals-item-total"><label>Grand Total (Rs)</label><div class="totals-value" id="cart-total">0.00</div></div>
 		</div>
-		<div id="row6">
-			<button class="btn">ORDER NOW</button>
-		</div>
-	</div>
+		<button class="checkout" type="button">Checkout</button>
+	</main>
 	<footer>Copyright © 2020-2021 OnlineFoodShop.
 		All Rights are reserved</footer>
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha384-fgGyf7Mo7DURSOMnOy7ed+dkq5Job205Gnzu6QIg0BOHKaqt4D76Dt8VlDCzcMHV" crossorigin="anonymous"></script>
+	<script src="script1.js"></script>
 </body>
 </html>

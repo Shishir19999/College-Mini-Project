@@ -4,11 +4,11 @@ var fadeTime = 300;
 
 
 /* Assign actions */
-$('.product-quantity input').change( function() {
+$('.product-quantity input').on('change', function() {
   updateQuantity(this);
 });
 
-$('.product-removal button').click( function() {
+$('.product-removal button').on('click', function() {
   removeItem(this);
 });
 
@@ -50,7 +50,7 @@ function updateQuantity(quantityInput)
   /* Calculate line price */
   var productRow = $(quantityInput).parent().parent();
   var price = parseFloat(productRow.children('.product-price').text());
-  var quantity = $(quantityInput).val();
+  var quantity = Math.max(0, parseInt($(quantityInput).val(), 10) || 0);
   var linePrice = price * quantity;
   
   /* Update line price display and recalc cart totals */
@@ -74,3 +74,6 @@ function removeItem(removeButton)
     recalculateCart();
   });
 }
+
+/* Show correct totals on first load */
+$(function () { recalculateCart(); });

@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style2.css">
     <title>Login</title>
   </head>
@@ -14,41 +17,42 @@
             </div>
          
             <div class="form"> 
-              <i class="fa fa-user icon" aria-hidden="true"></i>
+              <i class="fa-solid fa-user icon" aria-hidden="true"></i>
               <b>Username</b>
              <input class="field" type="text" placeholder="Enter Username" id="username" required />
 </div>
         
            <div class="form">
              <div><label for="name">
-             <i class="fa fa-lock icon"></i>
+             <i class="fa-solid fa-lock icon"></i>
                <b>Password</b></label></div>
-    <input class="field" type="text" placeholder="Enter Password" name="pass" id="password" required>
-             <div class="logineff"><button type="submit" id="login" onclick="onClick()" href="index.html">Login</button></div>
+    <input class="field" type="password" placeholder="Enter Password" name="pass" id="password" required>
+             <div class="logineff"><button type="submit" id="login" onclick="return onClick(event)">Login</button></div>
              <div class="logineff"><button type="submit" id="logout">Logout</button></div>
             <label>
             <input type="checkbox" checked="checked" name="remember">Remember me</label>
             </div>
               
-            <div class="fpass" margin="center" ><a href="#">Forget Password?</a></div>
+            <div class="fpass"><a href="#">Forget Password?</a></div>
             <br> 
             <div class="fpass">
                 <a href="./" id="linkcreateaccount">Don't have an account</a>
             </div>
-            <hr></hr>
+            <hr>
 <!--       <div class="line" id="css"> 
       </div> -->
+           <div id="message" role="status"></div>
            <div class="or"><b>Or Login Using</b></div>
               <div class="social">  
                 
      <button type="submit" id="login1" class="loginfin">
-<i class="fa fa-twitter"></i></button>
+<i class="fa-brands fa-twitter"></i></button>
                 
 <button type="submit" id="login2" class="loginfin">
-<i class="fa fa-facebook"></i></button>
+<i class="fa-brands fa-facebook"></i></button>
                 
                 <button type="submit" id="login3" class="loginfin">
-<i class="fa fa-google"></i></button>
+<i class="fa-brands fa-google"></i></button>
  
 </div>   
           </div>

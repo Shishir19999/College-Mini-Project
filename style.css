@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body 
+{
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+}
+ul.list-name{
+    margin-top: 50px;
+}
+p {
+    color: navy;
+    text-indent: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left:450PX;
+  }
+ul.list-name>a{
+    text-decoration: none;
+    list-style-type: none;
+}
+

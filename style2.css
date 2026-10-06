@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+  
+form {
+  border: 0px solid #f1f1f1;
+  border-radius: 8px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(165, 166, 166, 0.4);
+  margin: auto;
+  display: inline-block;
+  margin-top: 30px;
+  justify-content: center;
+  position: relative;
+}
+
+input[type=text], input[type=password] {
+ width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-family: helvetica;
+  border-radius: 5px;
+  align-items: center;
+  outline: none;
+  transition: all 0.3s;
+  text-indent: 10px;
+}
+
+.field:focus {
+   background-color: rgba(219, 219, 219, 0.2);
+}
+.form i{
+  position: absolute;
+}
+.icon {
+            padding: 38.5px;
+            color: black;
+            min-width: 50px;
+            text-align: center;
+            margin-left: -48px;
+            opacity: 0.5;
+  
+}
+
+.container{
+  padding: 20px;
+  margin: 10px 0px;
+  min-width: 150px;
+  max-width: 300px;
+   display: block;
+  justify-content: center;
+  margin: auto;
+}
+
+#contcss:hover{
+  border: 0px solid #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 0px 17px rgba(165, 166, 166, 0.5);
+  transition: all 0.3s;
+}
+
+.logineff button{
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+}
+#logout{
+  display: none;
+  background: rgba(235, 64, 52);
+  box-shadow: inset 0 0 2px 2px #d11204;
+}
+.logineff button:hover{
+  opacity: 0.9;
+}
+
+#login:hover{
+  opacity: 0.8;
+  transition: all 0.3s;
+  }
+
+img{
+  border-radius: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 20%;
+  display: block;
+}
+
+/* body{
+  background-image: linear-gradient(to right, black, #BFC1C1) */
+
+p{
+  text-align: right;
+  padding: 0px 0;
+  margin: 0 0;
+  font-family: helvetica;
+  font-display: red;
+  
+}
+.fpass{
+    margin:10px 0px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.fpass a{
+  color: black;
+  text-decoration: none;
+}
+
+.fpass a:hover{
+  color: red;
+    transition: all 0.5s;
+  text-decoration: none;
+}
+
+
+.loginfin{
+    color: black;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  margin: -10px 8px;
+  cursor: pointer;
+  border-radius: 100px;
+  display: inline-block;
+  box-shadow: 0px 0px 15px rgba(165, 166, 166, 0.35);
+  border: 0px solid rgba(165, 166, 166, 0.4);
+  font-size: 15px;
+  }
+
+#login1:hover{
+  background-color: #26abfd;
+  color: white;
+  box-shadow: 0px 0px 13px rgba(165, 166, 166, 0.5);
+  transition: all 0.3s;
+}
+
+.fpass{
+  display:inline-block;
+  position: relative;
+  text-align: right;
+  color: black;
+}
+
+#login2:hover{
+  background-color: #3f68be;
+  color: white;
+  box-shadow: 0px 0px 13px rgba(165, 166, 166, 0.5);
+  transition: all 0.3s;
+}
+
+#login3:hover{
+  background-color: #dd4b39;
+  color: white;
+  box-shadow: 0px 0px 13px rgba(165, 166, 166, 0.5);
+  transition: all 0.3s;
+}
+.social{
+  margin: 0px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  
+}
+hr{
+  opacity: 0.2;
+}
+  
+.display{
+   margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.or b{
+  margin:10px 0px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center; 
+}

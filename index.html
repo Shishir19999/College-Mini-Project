@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Online FoodShop - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online FoodShop - Fresh food, fast</title>
+<meta name="description" content="Order biryani, burgers, pizza, drinks and more from Online FoodShop. Filter the menu, save favorites, apply coupons and check out in minutes.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Online FoodShop - Fresh food, fast">
+<meta property="og:description" content="Order biryani, burgers, pizza, drinks and more from Online FoodShop. Filter the menu, save favorites, apply coupons and check out in minutes.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
-  
-  <div class="">
-    <div class="row">
-      <div class="col-md-2">
-        <div id="leftSide">
-          <div id="logo">
-              <h1>
-                  <a href="index.html"><br>
-                      <img src="logo.png" alt="logo">
-                  </a>
-              </h1>
-          </div>    
-          <div class="list-sidebar">
-            <ul class="list-name">
-              <li><a href="index.html" class="active" aria-current="page">HOME</a> </li><hr>
-              <li><a href="order.html">TAKE ORDERS</a> </li><hr>
-              <li><a href="contact.html">CONTACT </a> </li><hr>
-              <li><a href="aboutus.html">ABOUT US</a> </li><hr>
-            </ul>
-          </div>
-        
-        </div>
-      </div>
-
-
-      <div class="col-md-10">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="keychain.jpg" class="d-flex align-items-center justify-content-center w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="burger.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assorted product.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
+<body data-page="home">
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" data-parallax="0.2"><picture><source type="image/avif" srcset="assets/img/thali-600.avif 600w, assets/img/thali-1200.avif 1200w" sizes="100vw"><source type="image/webp" srcset="assets/img/thali-600.webp 600w, assets/img/thali-1200.webp 1200w" sizes="100vw"><img fetchpriority="high" src="assets/img/thali-1200.jpg" srcset="assets/img/thali-600.jpg 600w, assets/img/thali-1200.jpg 1200w" sizes="100vw" alt="" width="1200" height="675" ></picture></div>
+  <span class="float a" data-parallax="0.4" aria-hidden="true"></span><span class="float b" data-depth="18" aria-hidden="true"></span>
+  <div class="container"><div class="hero-inner">
+    <p class="eyebrow" style="color:#ffcf9e">Online FoodShop</p>
+    <h1 id="hero-title">Hot, fresh food at your door</h1>
+    <p>Browse the full menu, filter by diet and price, save your favorites and check out in a few taps.</p>
+    <div class="hero-actions"><a class="btn" href="menu.html">Order now</a><a class="btn btn-ghost" href="aboutus.html">Our story</a></div>
+  </div></div>
+</section>
+<section class="section" aria-labelledby="feat-title"><div class="container">
+  <h2 id="feat-title" data-reveal>Why people love us</h2>
+  <div class="cards3">
+    <div class="card feature" data-reveal><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M3 7h11v10H3zM14 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></span><h3>Quick delivery</h3><p class="muted">Free delivery above Rs 300, or pick up from the counter in 15 minutes.</p></div>
+    <div class="card feature" data-reveal data-reveal-delay="80"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-5-3-8-6-8-10a5 5 0 0 1 8-3 5 5 0 0 1 8 3c0 4-3 7-8 10z"/></svg></span><h3>Cooked fresh</h3><p class="muted">Every order is prepared when you place it, with clearly marked veg and non-veg dishes.</p></div>
+    <div class="card feature" data-reveal data-reveal-delay="160"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-8 8-9-9V3h8zM7.5 7.5h.01"/></svg></span><h3>Coupons</h3><p class="muted">Try WELCOME10, FEAST50 or FREESHIP in your cart for a better price.</p></div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+</div></section>
+<section class="section alt" aria-labelledby="gal-title"><div class="container">
+  <h2 id="gal-title" data-reveal>From our kitchen</h2>
+  <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Featured" data-reveal>
+    <div class="slides">
+      <figure class="slide" style="margin:0"><picture><source type="image/avif" srcset="assets/img/thali-600.avif 600w, assets/img/thali-1200.avif 1200w" sizes="(min-width:1180px) 1150px, 100vw"><source type="image/webp" srcset="assets/img/thali-600.webp 600w, assets/img/thali-1200.webp 1200w" sizes="(min-width:1180px) 1150px, 100vw"><img src="assets/img/thali-1200.jpg" srcset="assets/img/thali-600.jpg 600w, assets/img/thali-1200.jpg 1200w" sizes="(min-width:1180px) 1150px, 100vw" alt="A thali with curry, flatbread and rice" width="1200" height="675" loading="lazy" ></picture><figcaption><strong>Homestyle thali</strong>Comfort food, cooked the way you like it.</figcaption></figure>
+      <figure class="slide" style="margin:0"><picture><source type="image/avif" srcset="assets/img/cafe-600.avif 600w, assets/img/cafe-1200.avif 1200w" sizes="(min-width:1180px) 1150px, 100vw"><source type="image/webp" srcset="assets/img/cafe-600.webp 600w, assets/img/cafe-1200.webp 1200w" sizes="(min-width:1180px) 1150px, 100vw"><img src="assets/img/cafe-1200.jpg" srcset="assets/img/cafe-600.jpg 600w, assets/img/cafe-1200.jpg 1200w" sizes="(min-width:1180px) 1150px, 100vw" alt="A steaming cup of coffee on a dark background" width="1200" height="750" loading="lazy" ></picture><figcaption><strong>Coffee and chai</strong>Hot drinks from Rs 5.</figcaption></figure>
+      <figure class="slide" style="margin:0"><picture><source type="image/avif" srcset="assets/img/restaurant-600.avif 600w, assets/img/restaurant-1200.avif 1200w" sizes="(min-width:1180px) 1150px, 100vw"><source type="image/webp" srcset="assets/img/restaurant-600.webp 600w, assets/img/restaurant-1200.webp 1200w" sizes="(min-width:1180px) 1150px, 100vw"><img src="assets/img/restaurant-1200.jpg" srcset="assets/img/restaurant-600.jpg 600w, assets/img/restaurant-1200.jpg 1200w" sizes="(min-width:1180px) 1150px, 100vw" alt="Dining area with tables and chairs" width="1200" height="900" loading="lazy" ></picture><figcaption><strong>Sit down with friends</strong>Our dining room is open every day.</figcaption></figure>
+    </div>
+    <button type="button" class="icon-btn car-btn prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button type="button" class="icon-btn car-btn next" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+    <div class="dots" role="group" aria-label="Choose slide"></div>
+  </div>
+</div></section>
+<section class="section" aria-labelledby="pop-title"><div class="container">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:1rem"><h2 id="pop-title" data-reveal style="margin:0">Popular right now</h2><a class="btn btn-ghost btn-sm" href="menu.html">See full menu</a></div>
+  <div class="grid" id="featured"></div>
+</div></section>
+<section class="section alt"><div class="container split">
+  <div class="parallax-frame" data-reveal><picture><source type="image/avif" srcset="assets/img/restaurant-600.avif 600w, assets/img/restaurant-1200.avif 1200w" sizes="(min-width:800px) 560px, 100vw"><source type="image/webp" srcset="assets/img/restaurant-600.webp 600w, assets/img/restaurant-1200.webp 1200w" sizes="(min-width:800px) 560px, 100vw"><img data-parallax="0.05" src="assets/img/restaurant-1200.jpg" srcset="assets/img/restaurant-600.jpg 600w, assets/img/restaurant-1200.jpg 1200w" sizes="(min-width:800px) 560px, 100vw" alt="Our dining room" width="1200" height="900" loading="lazy" ></picture></div>
+  <div data-reveal><p class="eyebrow">About us</p><h2>A small shop with a big menu</h2><p class="muted">We started as a college project and grew into a neighbourhood favourite. Meet the team and read how we cook.</p><a class="btn" href="aboutus.html">About the team</a></div>
+</div></section>
+</main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/parallax.js"></script>
 </body>
 </html>

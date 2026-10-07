@@ -1,75 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Online FoodShop</title>
+<meta name="description" content="Get in touch with Online FoodShop. Send us a message or find our contact details.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact - Online FoodShop">
+<meta property="og:description" content="Get in touch with Online FoodShop. Send us a message or find our contact details.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS" crossorigin="anonymous" referrerpolicy="no-referrer">
-     <link rel="stylesheet" href="style1.css">
-    <title>Contact Us - Online FoodShop</title>
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
-
-<div class="">
-
-<div class="row">
-<div class="col-md-2"> 
-<div id="leftSide">
-<div id="logo"> <h1>
-<a href="index.html"><br>
-<img src="logo.png" alt="logo">
-</a>
-</h1>
-
-</div> 
-</div> 
-
-
-<div class="list-sidebar">
-<ul class="list-name">
-<li><a href="index.html">HOME</a> </li><hr>
-<li><a href="order.html">TAKE ORDERS</a> </li><hr>
-<li><a href="contact.html" class="active" aria-current="page">CONTACT </a> </li><hr>
-<li><a href="aboutus.html">ABOUT US</a> </li><hr>
-</ul>
-</div>
-
-</div>
-
-
-
-<div class="col-md-10">
-
-<div class="container">
-<div class="contact-method">
-<i class="fa-regular fa-envelope" aria-hidden="true"></i>
-<span>email@yahoo.com</span>
-</div>
-
-<div class="contact-method">
-<i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
-<span>+912358873697</span>
-</div>
-
-<div class="contact-method">
-<i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-<span>Location</span>
-</div>
-
-</div>
-
-
-</div>
-</div>
-
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+<body data-page="contact">
+<main id="main"><div class="container"><div class="page-head"><h1>Contact us</h1><p>Questions, feedback or a catering enquiry? Send us a message.</p></div>
+<div class="layout2 contact-layout"><div class="card" data-reveal>
+<form id="contact-form" novalidate><h2 style="font-size:1.25rem">Send a message</h2><div class="field"><label for="m-name">Your name</label><input class="input" id="m-name" aria-describedby="m-name-err" autocomplete="name"><p class="field-error" id="m-name-err"></p></div><div class="field"><label for="m-email">Email</label><input class="input" id="m-email" aria-describedby="m-email-err" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com"><p class="field-error" id="m-email-err"></p></div>
+<div class="field"><label for="m-msg">Message</label><textarea class="input" id="m-msg" maxlength="500" aria-describedby="m-msg-err m-count"></textarea><div style="display:flex;justify-content:space-between"><p class="field-error" id="m-msg-err"></p><span class="muted" id="m-count" style="font-size:.8125rem">0 / 500</span></div></div>
+<button class="btn" id="m-send" type="submit">Send message</button></form>
+<div id="contact-ok" class="success" role="status" hidden><div class="tick" aria-hidden="true">&#10003;</div><h2>Message sent</h2><p class="muted">Thanks for writing. This demo form does not send anything, but a real site would reply within a day.</p><button class="btn btn-ghost" id="m-again" type="button">Send another</button></div></div>
+<div class="contact-cards" data-reveal data-reveal-delay="100"><div class="card"><strong>Email</strong><br><a href="mailto:hello@example.com">hello@example.com</a></div><div class="card"><strong>Phone</strong><br>+00 000 000 0000</div><div class="card"><strong>Opening hours</strong><br>Every day, 9:00 to 22:00<br><span class="muted">Sample address: 1 Example Street, Sample City</span></div></div></div></div></main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/parallax.js"></script>
 </body>
 </html>

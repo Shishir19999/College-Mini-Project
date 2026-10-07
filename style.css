@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 html, body {
     overflow-x: hidden;
     height: 100%;
@@ -38,3 +38,16 @@ ul.list-name>a{
     list-style-type: none;
 }
 
+
+.list-name a.active { font-weight: bold; color: #913d88; }
+img { max-width: 100%; height: auto; }
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    p { margin-left: 40px; }
+}
+@media (max-width: 768px) {
+    ul.list-name { margin-top: 10px; text-align: center; padding-left: 0; }
+    p { margin-left: 16px; margin-right: 16px; text-indent: 0; }
+    #logo h1 { text-align: center; }
+}

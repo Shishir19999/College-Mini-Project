@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body 
 {
@@ -81,4 +81,11 @@ ul.list-name>a{
     margin-right: auto;
     text-align: center;
     
+}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .container { position: static; transform: none; padding: 16px 0; }
+    .contact-method { width: 80%; max-width: 240px; }
+    ul.list-name { margin-top: 10px; text-align: center; padding-left: 0; }
+    p { margin-left: 16px; margin-right: 16px; }
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your cart - Online FoodShop</title>
+<meta name="description" content="Review your Online FoodShop cart, apply a coupon code and continue to checkout.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your cart - Online FoodShop">
+<meta property="og:description" content="Review your Online FoodShop cart, apply a coupon code and continue to checkout.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="cart">
+<main id="main"><div class="container"><div class="page-head"><h1>Your cart</h1></div>
+<div class="layout2"><section class="card" aria-label="Cart items"><div id="cart-lines"></div>
+<div class="actions" style="margin-top:1rem"><a class="btn btn-ghost btn-sm" href="menu.html">Add more items</a><button type="button" class="btn btn-ghost btn-sm" id="clear">Empty cart</button></div></section>
+<aside class="card" id="summary" aria-label="Order summary" hidden><h2 style="font-size:1.25rem">Order summary</h2>
+<form id="coupon-form" novalidate><label class="label" for="coupon">Coupon code</label><div class="coupon"><input class="input" id="coupon" autocomplete="off" aria-describedby="coupon-msg" placeholder="WELCOME10"><button class="btn btn-ghost" type="submit">Apply</button></div><p class="muted" id="coupon-msg" role="status" style="font-size:.8125rem"></p></form>
+<div id="totals"></div><p class="muted" id="ship-hint" style="font-size:.8125rem;margin-top:.5rem"></p>
+<a class="btn btn-block" id="go-checkout" href="checkout.html">Checkout</a></aside></div></div></main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout - Online FoodShop</title>
+<meta name="description" content="Enter your details, choose a payment method and place your Online FoodShop order.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Checkout - Online FoodShop">
+<meta property="og:description" content="Enter your details, choose a payment method and place your Online FoodShop order.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="checkout">
+<main id="main"><div class="container"><div class="page-head"><h1>Checkout</h1></div>
+<div id="checkout">
+<div id="checkout-flow"><ol class="steps" id="steps"><li><span>1</span>Details</li><li><span>2</span>Payment</li><li><span>3</span>Review</li></ol>
+<div class="layout2"><div class="card">
+<form id="f-details" data-step="1" novalidate><h2>Your details</h2>
+<fieldset style="border:0;padding:0;margin:0 0 1rem"><legend class="label">How would you like your order?</legend><label class="radio-card"><input type="radio" name="mode" value="delivery" checked> <span>Home delivery</span></label><label class="radio-card"><input type="radio" name="mode" value="pickup" > <span>Pickup from the shop (no delivery fee)</span></label></fieldset>
+<div class="row2"><div class="field"><label for="c-name">Full name</label><input class="input" id="c-name" aria-describedby="c-name-err" autocomplete="name" required><p class="field-error" id="c-name-err"></p></div><div class="field"><label for="c-phone">Phone</label><input class="input" id="c-phone" aria-describedby="c-phone-err" type="tel" autocomplete="tel" inputmode="tel" placeholder="+00 000 000 0000" required><p class="field-error" id="c-phone-err"></p></div></div>
+<div id="addr-fields"><div class="field"><label for="c-addr">Address</label><input class="input" id="c-addr" aria-describedby="c-addr-err" autocomplete="street-address" placeholder="House no, street, area"><p class="field-error" id="c-addr-err"></p></div><div class="row2"><div class="field"><label for="c-city">City</label><input class="input" id="c-city" aria-describedby="c-city-err" autocomplete="address-level2"><p class="field-error" id="c-city-err"></p></div><div class="field"><label for="c-pin">Pincode</label><input class="input" id="c-pin" aria-describedby="c-pin-err" inputmode="numeric" maxlength="6" autocomplete="postal-code"><p class="field-error" id="c-pin-err"></p></div></div></div>
+<div class="actions"><a class="btn btn-ghost" href="cart.html">Back to cart</a><button class="btn" type="submit">Continue to payment</button></div></form>
+<form id="f-pay" data-step="2" hidden novalidate><h2>Payment</h2><p class="muted">This is a demo. No real payment is taken, and card details are never stored.</p>
+<fieldset style="border:0;padding:0;margin:0 0 1rem"><legend class="label">Payment method</legend><label class="radio-card"><input type="radio" name="pay" value="upi" checked> <span>UPI</span></label><label class="radio-card"><input type="radio" name="pay" value="card" > <span>Credit or debit card</span></label><label class="radio-card"><input type="radio" name="pay" value="cod" > <span>Cash on delivery / pay at counter</span></label></fieldset>
+<div id="pay-upi"><div class="field"><label for="p-upi">UPI id</label><input class="input" id="p-upi" aria-describedby="p-upi-err" placeholder="name@bank" autocomplete="off"><p class="field-error" id="p-upi-err"></p></div></div>
+<div id="pay-card" hidden><div class="field"><label for="p-card">Card number</label><input class="input" id="p-card" aria-describedby="p-card-err" inputmode="numeric" autocomplete="off" placeholder="4242 4242 4242 4242"><p class="field-error" id="p-card-err"></p></div><div class="row2"><div class="field"><label for="p-exp">Expiry</label><input class="input" id="p-exp" aria-describedby="p-exp-err" placeholder="MM/YY" inputmode="numeric" autocomplete="off"><p class="field-error" id="p-exp-err"></p></div><div class="field"><label for="p-cvv">CVV</label><input class="input" id="p-cvv" aria-describedby="p-cvv-err" inputmode="numeric" maxlength="4" autocomplete="off"><p class="field-error" id="p-cvv-err"></p></div></div></div>
+<div id="pay-cod" hidden><p class="alert">Pay the exact amount when the order arrives or when you collect it.</p></div>
+<div class="actions"><button class="btn btn-ghost" type="button" data-back>Back</button><button class="btn" type="submit">Review order</button></div></form>
+<section data-step="3" hidden><h2>Review and place order</h2><div id="review"></div><div class="actions"><button class="btn btn-ghost" type="button" data-back>Back</button><button class="btn" type="button" id="place">Place order</button></div></section>
+</div><aside class="card" aria-label="Order summary"><h2 style="font-size:1.25rem">Your order</h2><div id="side-lines"></div><div id="side-totals"></div></aside></div></div>
+<section class="card success" id="confirm" hidden role="status"><div class="tick" aria-hidden="true">&#10003;</div><h2>Order confirmed</h2><p>Thank you! Your order id is <span class="oid" id="order-id"></span></p><p>Total: <strong id="order-total"></strong><br><span class="muted" id="order-eta"></span></p><div class="hero-actions" style="justify-content:center"><a class="btn" href="orders.html">View my orders</a><a class="btn btn-ghost" href="menu.html">Order more</a></div></section>
+</div></div></main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>

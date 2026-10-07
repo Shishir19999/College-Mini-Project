@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in - Online FoodShop</title>
+<meta name="description" content="Log in or create an Online FoodShop account to check out and track your orders.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Log in - Online FoodShop">
+<meta property="og:description" content="Log in or create an Online FoodShop account to check out and track your orders.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="login">
+<main id="main"><div class="container"><div class="page-head" style="text-align:center"><h1 id="a-title">Welcome back</h1></div>
+<div class="auth-wrap card">
+<div id="auth-forms"><div class="auth-tabs" role="tablist" aria-label="Account"><button type="button" class="chip" role="tab" data-tab="login" aria-selected="true">Log in</button><button type="button" class="chip" role="tab" data-tab="register" aria-selected="false">Register</button></div>
+<section id="login-panel"><div class="alert error" id="login-alert" role="alert" hidden></div>
+<form id="login-form" novalidate><div class="field"><label for="l-email">Email</label><input class="input" id="l-email" aria-describedby="l-email-err" type="email" autocomplete="username" inputmode="email" placeholder="you@example.com"><p class="field-error" id="l-email-err"></p></div><div class="field"><label for="l-pass">Password</label><div class="pw"><input class="input" id="l-pass" type="password" autocomplete="current-password" aria-describedby="l-pass-err" ><button type="button" data-pw="l-pass" aria-pressed="false" aria-label="Show or hide password">Show</button></div><p class="field-error" id="l-pass-err"></p></div>
+<div class="field"><label class="check"><input type="checkbox" id="l-remember"> Remember me on this device</label></div><button class="btn btn-block" id="login-btn" type="submit">Log in</button></form>
+<div class="demo-box">Demo account: <code>demo@example.com</code> / <code>Demo@1234</code> <button type="button" class="link-btn" id="fill-demo">Fill it in</button><br>Also: <code>student@example.com</code> / <code>Student@123</code>. Accounts live only in this browser and passwords are stored as SHA-256 hashes. This is a demo, not real security.</div></section>
+<section id="register-panel" hidden><div class="alert error" id="reg-alert" role="alert" hidden></div>
+<form id="register-form" novalidate><div class="field"><label for="r-name">Full name</label><input class="input" id="r-name" aria-describedby="r-name-err" autocomplete="name"><p class="field-error" id="r-name-err"></p></div><div class="field"><label for="r-email">Email</label><input class="input" id="r-email" aria-describedby="r-email-err" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com"><p class="field-error" id="r-email-err"></p></div><div class="field"><label for="r-pass">Password</label><div class="pw"><input class="input" id="r-pass" type="password" autocomplete="new-password" aria-describedby="r-pass-err" minlength="8"><button type="button" data-pw="r-pass" aria-pressed="false" aria-label="Show or hide password">Show</button></div><p class="field-error" id="r-pass-err"></p></div><div class="field"><label for="r-confirm">Confirm password</label><div class="pw"><input class="input" id="r-confirm" type="password" autocomplete="new-password" aria-describedby="r-confirm-err" ><button type="button" data-pw="r-confirm" aria-pressed="false" aria-label="Show or hide confirm password">Show</button></div><p class="field-error" id="r-confirm-err"></p></div><p class="muted" style="font-size:.8125rem">At least 8 characters with a letter and a number.</p><button class="btn btn-block" type="submit">Create account</button></form></section></div>
+<div id="signed-in" hidden class="success"><div class="tick" aria-hidden="true">&#10003;</div><h2>You are logged in</h2><p id="who" class="muted"></p><div class="hero-actions" style="justify-content:center"><a class="btn" href="menu.html">Browse the menu</a><a class="btn btn-ghost" href="orders.html">My orders</a><button class="btn btn-ghost" id="logout" type="button">Log out</button></div></div>
+</div></div></main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>

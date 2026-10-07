@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favorites - Online FoodShop</title>
+<meta name="description" content="Your saved dishes at Online FoodShop.">
+<meta name="theme-color" content="#b4401f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Favorites - Online FoodShop">
+<meta property="og:description" content="Your saved dishes at Online FoodShop.">
+<meta property="og:image" content="https://shishir19999.github.io/College-Mini-Project/assets/img/thali-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('fs.theme'));if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="favorites">
+<main id="main"><div class="container"><div class="page-head"><h1>Your favorites</h1><p>Dishes you have saved with the heart button.</p></div>
+<div class="toolbar">
+  <div class="toolbar-row"><div class="search"><label class="sr-only" for="q">Search the menu</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="input" id="q" type="search" placeholder="Search dishes" autocomplete="off"></div>
+  <div><label class="sr-only" for="max">Maximum price</label><select class="input" id="max"><option value="0">Any price</option><option value="30">Up to Rs 30</option><option value="50">Up to Rs 50</option><option value="100">Up to Rs 100</option></select></div>
+  <div><label class="sr-only" for="sort">Sort</label><select class="input" id="sort"><option value="default">Sort: Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A to Z</option></select></div></div>
+  <div class="toolbar-row" id="diet" role="group" aria-label="Diet"><button type="button" class="chip" data-diet="all" aria-pressed="true">All</button><button type="button" class="chip" data-diet="veg" aria-pressed="false"><span class="diet"></span> Veg</button><button type="button" class="chip" data-diet="nonveg" aria-pressed="false"><span class="diet nv"></span> Non-veg</button><span class="muted" id="count" aria-live="polite" style="margin-left:auto"></span></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Categories"></div>
+</div>
+<div id="grid"></div></div></main>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>

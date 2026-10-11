@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online FoodShop - Fresh food, fast</title>
+    <meta name="description" content="Order biryani, burgers, pizza, drinks and more from Online FoodShop. Filter the menu, save favorites, apply coupons, track your order and check out in minutes." />
+    <meta name="theme-color" content="#b4401f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Online FoodShop - Fresh food, fast" />
+    <meta property="og:description" content="Order biryani, burgers, pizza, drinks and more. Filter the menu, save favorites, apply coupons and track your order." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var t = JSON.parse(localStorage.getItem('fs.theme'));
+          if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This application needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

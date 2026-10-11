@@ -1,0 +1,23 @@
+{
+  "name": "college-mini-project-foodshop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "client": "npm run dev --prefix Frontend",
+    "server": "npm run dev --prefix Backend",
+    "dev": "concurrently -k -n SERVER,CLIENT -c green,blue \"npm run server\" \"npm run client\"",
+    "preview:live": "npm run dev:preview --prefix Frontend",
+    "test": "npm test --prefix Backend && npm test --prefix Frontend",
+    "lint": "npm run lint --prefix Frontend",
+    "seed": "npm run seed --prefix Backend",
+    "build": "npm run build --prefix Frontend",
+    "build:pages": "npm run build:pages --prefix Frontend",
+    "install:all": "npm install && npm install --prefix Backend && npm install --prefix Frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

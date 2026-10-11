@@ -1,0 +1,7 @@
+{
+  "name": "foodshop-shared",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Framework-free rules, seed data and routes shared by the API server and the browser-only Live preview."
+}

@@ -1,0 +1,58 @@
+# docker compose up --build
+# App: http://localhost:${FRONTEND_PORT:-8081}   API (direct): http://localhost:${BACKEND_PORT:-8080}/api
+# Put JWT_SECRET (and any overrides below) in a .env file next to this file (see .env.example).
+# First run: docker compose run --rm backend node scripts/seed.js   (loads the sample shop)
+services:
+  mongo:
+    image: mongo:8.0
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+
+  backend:
+    build:
+      context: .
+      dockerfile: Backend/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      PORT: "8080"
+      MONGODB_URL: mongodb://mongo:27017/foodshop
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:${FRONTEND_PORT:-8081}}
+      JWT_SECRET: "${JWT_SECRET:?Set JWT_SECRET in .env or the shell}"
+      JWT_EXPIRE: "${JWT_EXPIRE:-1d}"
+      UPLOAD_DIR: /data/uploads
+      # Optional contact-form email over Gmail SMTP (leave blank to keep messages in the admin inbox only)
+      SMTP_HOST: "${SMTP_HOST:-}"
+      SMTP_PORT: "${SMTP_PORT:-587}"
+      SMTP_USER: "${SMTP_USER:-}"
+      SMTP_PASS: "${SMTP_PASS:-}"
+      SMTP_FROM: "${SMTP_FROM:-}"
+      CONTACT_TO: "${CONTACT_TO:-}"
+    volumes:
+      - uploads:/data/uploads
+    ports:
+      - "${BACKEND_PORT:-8080}:8080"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Frontend/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-/api}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_PORT:-8081}:80"
+
+volumes:
+  mongo-data:
+  uploads:
